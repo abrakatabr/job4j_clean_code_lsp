@@ -3,8 +3,9 @@ package ru.job4j.ood.isp.menu;
 import java.util.Scanner;
 
 public class TodoApp {
+
     private static final ActionDelegate ACTION = () -> System.out.println("Совершается действие");
-    private static final String pointsList = new StringBuilder()
+    private static final String POINTS_LIST = new StringBuilder()
             .append("1.Добавить элемент в корень меню").append(System.lineSeparator())
             .append("2.Добавить элемент к родительскому элементу").append(System.lineSeparator())
             .append("3.Вызвать действие пункта меню").append(System.lineSeparator())
@@ -13,8 +14,8 @@ public class TodoApp {
 
     private void menuAction() {
         Menu menu = new SimpleMenu();
-        try (Scanner scanner = new Scanner(System.in)){
-            System.out.println(pointsList);
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println(POINTS_LIST);
             outer:
             while (true) {
                 int choice = scanner.nextInt();
@@ -52,7 +53,7 @@ public class TodoApp {
                         System.out.println("Такого пункта нет!");
                         System.out.println(System.lineSeparator());
                 }
-                System.out.println(pointsList);
+                System.out.println(POINTS_LIST);
             }
         }
     }

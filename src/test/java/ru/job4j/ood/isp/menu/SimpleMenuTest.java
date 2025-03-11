@@ -7,7 +7,6 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.*;
 
 public class SimpleMenuTest {
-
     public static final ActionDelegate STUB_ACTION = System.out::println;
 
     @Test

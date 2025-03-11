@@ -12,6 +12,7 @@ import java.io.StringReader;
 import static org.assertj.core.api.Assertions.*;
 
 class PrinterTest {
+
     public static final ActionDelegate STUB_ACTION = System.out::println;
     private ByteArrayOutputStream output = new ByteArrayOutputStream();
 

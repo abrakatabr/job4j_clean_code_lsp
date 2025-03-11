@@ -4,7 +4,8 @@ import java.util.Iterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Printer implements MenuPrinter{
+public class Printer implements MenuPrinter {
+
     @Override
     public void print(Menu menu) {
         Iterator<Menu.MenuItemInfo> iterator = menu.iterator();
